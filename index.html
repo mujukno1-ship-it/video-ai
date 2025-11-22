@@ -1,1 +1,29 @@
-<html><body><h1>video-ai basic</h1></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>video-ai</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>video-ai Creator</h1>
+
+  <div class="box">
+    <label>모션 영상 업로드 (mp4)</label><br/>
+    <input type="file" id="motionFile" accept="video/mp4" />
+  </div>
+
+  <div class="box">
+    <label>이미지 업로드 (AI가 춤추게 할 이미지)</label><br/>
+    <input type="file" id="imageFile" accept="image/*" />
+  </div>
+
+  <button id="startBtn">영상 생성 시작</button>
+
+  <h3>결과 영상</h3>
+  <video id="resultVideo" width="480" controls></video>
+
+  <script src="script.js"></script>
+</body>
+</html>
